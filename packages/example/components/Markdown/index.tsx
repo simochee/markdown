@@ -1,14 +1,34 @@
 import remarkPlugin from "@simochee-markdown/remark-plugin";
-import { useEffect } from "react";
-import { useRemark } from "react-remark";
+import { useEffect, useState } from "react";
+import { remark } from "remark";
+import html from "remark-html";
 import article from "../../assets/article.md?raw";
 
 export const Markdown: React.FC = () => {
-	const [content, setSource] = useRemark({ remarkPlugins: [remarkPlugin] });
+	const [content, setContent] = useState<string>();
 
 	useEffect(() => {
-		setSource(article);
-	}, [setSource]);
+		remark()
+			.use(remarkPlugin)
+			.use(html)
+			.process(article)
+			.then((file) => {
+				if (typeof file.value === "string") {
+					setContent(file.value);
+				}
+			});
+	}, []);
 
-	return <div>{content}</div>;
+	if (!content) {
+		return <p>loading...</p>;
+	}
+
+	return (
+		<div>
+			<div
+				// biome-ignore lint/security/noDangerouslySetInnerHtml: markdown content
+				dangerouslySetInnerHTML={{ __html: content }}
+			/>
+		</div>
+	);
 };

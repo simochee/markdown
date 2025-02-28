@@ -21,6 +21,7 @@
 	"dependencies": {
 		"@simochee-markdown/remark-plugin": "workspace:^",
 		"react": "^19.0.0",
-		"react-remark": "^2.1.0"
+		"remark": "^15.0.1",
+		"remark-html": "^16.0.1"
 	}
 }
