@@ -1,0 +1,9 @@
+{
+	"name": "@simochee-markdown/tailwindcss-plugin",
+	"version": "0.0.0",
+	"scripts": {
+		"build": "echo 'not implemented'",
+		"dev": "echo 'not implemented'"
+	},
+	"license": "MIT"
+}
