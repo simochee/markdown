@@ -1,9 +1,30 @@
 {
 	"name": "@simochee-markdown/remark-plugin",
 	"version": "0.0.0",
+	"repository": {
+		"directory": "packages/remark-plugin",
+		"type": "git",
+		"url": "https://github.com/simochee/simochee-markdown.git"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": ["dist"],
+	"homepage": "https://github.com/simochee/simochee-markdown/tree/main/packages/remark-plugin#readme",
+	"author": "simochee <lollipop@simochee.net>",
 	"scripts": {
 		"build": "echo 'not implemented'",
 		"dev": "echo 'not implemented'"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"unbuild": "^3.5.0"
+	}
 }
