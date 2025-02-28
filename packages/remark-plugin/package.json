@@ -10,6 +10,7 @@
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
+			"default": "./dist/index.mjs",
 			"import": "./dist/index.mjs"
 		}
 	},
@@ -20,11 +21,21 @@
 	"homepage": "https://github.com/simochee/simochee-markdown/tree/main/packages/remark-plugin#readme",
 	"author": "simochee <lollipop@simochee.net>",
 	"scripts": {
-		"build": "echo 'not implemented'",
-		"dev": "echo 'not implemented'"
+		"build": "unbuild",
+		"dev": "unbuild --stub"
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"unbuild": "^3.5.0"
+		"@types/mdast": "^4.0.4",
+		"@types/node": "^22.13.5",
+		"unbuild": "^3.5.0",
+		"unified": "^11.0.5"
+	},
+	"peerDependencies": {
+		"unified": "^11.0.5",
+		"@types/mdast": "^4.0.4"
+	},
+	"dependencies": {
+		"unist-util-visit": "^5.0.0"
 	}
 }
