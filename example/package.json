@@ -19,7 +19,7 @@
 		"vite-plugin-node-polyfills": "catalog:"
 	},
 	"dependencies": {
-		"@simochee-markdown/remark-plugin": "workspace:^",
+		"@simochee-markdown/remark-preset": "workspace:^",
 		"@simochee-markdown/tailwindcss-plugin": "workspace:^",
 		"react": "catalog:",
 		"remark": "catalog:",

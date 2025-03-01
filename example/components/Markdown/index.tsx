@@ -1,7 +1,6 @@
-import remarkPlugin from "@simochee-markdown/remark-plugin";
+import remarkPreset from "@simochee-markdown/remark-preset";
 import { useEffect, useState } from "react";
 import { remark } from "remark";
-import html from "remark-html";
 
 type Props = {
 	children: string;
@@ -12,8 +11,7 @@ export const Markdown: React.FC<Props> = ({ children }) => {
 
 	useEffect(() => {
 		remark()
-			.use(remarkPlugin)
-			.use(html)
+			.use(remarkPreset)
 			.process(children)
 			.then((file) => {
 				if (typeof file.value === "string") {

@@ -1,8 +1,8 @@
 {
-	"name": "@simochee-markdown/remark-plugin",
+	"name": "@simochee-markdown/remark-preset",
 	"version": "0.0.0",
 	"repository": {
-		"directory": "packages/remark-plugin",
+		"directory": "packages/remark-preset",
 		"type": "git",
 		"url": "https://github.com/simochee/simochee-markdown.git"
 	},
@@ -18,7 +18,7 @@
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"files": ["dist"],
-	"homepage": "https://github.com/simochee/simochee-markdown/tree/main/packages/remark-plugin#readme",
+	"homepage": "https://github.com/simochee/simochee-markdown/tree/main/packages/remark-preset#readme",
 	"author": "simochee <lollipop@simochee.net>",
 	"scripts": {
 		"build": "rollup -c",
@@ -28,16 +28,18 @@
 	"devDependencies": {
 		"@internal/rollup-config": "workspace:^",
 		"@internal/tsconfigs": "workspace:^",
-		"@types/mdast": "catalog:",
 		"@types/node": "catalog:",
-		"rollup": "catalog:",
-		"unified": "catalog:"
+		"rollup": "catalog:"
 	},
 	"peerDependencies": {
-		"@types/mdast": "^4.0.4",
 		"unified": "^11.0.5"
 	},
 	"dependencies": {
-		"unist-util-visit": "catalog:"
+		"@shikijs/rehype": "^3.1.0",
+		"rehype-github-alerts": "^4.1.0",
+		"rehype-stringify": "^10.0.1",
+		"remark-breaks": "^4.0.0",
+		"remark-gfm": "^4.0.1",
+		"remark-rehype": "^11.1.1"
 	}
 }
