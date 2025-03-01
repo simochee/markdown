@@ -99,14 +99,14 @@ importers:
         specifier: 'catalog:'
         version: 2.4.4
 
-  packages/example:
+  example:
     dependencies:
       '@simochee-markdown/remark-plugin':
         specifier: workspace:^
-        version: link:../remark-plugin
+        version: link:../packages/remark-plugin
       '@simochee-markdown/tailwindcss-plugin':
         specifier: workspace:^
-        version: link:../tailwindcss-plugin
+        version: link:../packages/tailwindcss-plugin
       react:
         specifier: 'catalog:'
         version: 19.0.0
