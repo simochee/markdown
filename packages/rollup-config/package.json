@@ -1,0 +1,17 @@
+{
+	"name": "@internal/rollup-config",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": {
+			"default": "./index.js"
+		}
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^12.1.2",
+		"@types/deepmerge": "^2.2.3",
+		"deepmerge": "^4.3.1",
+		"rollup": "^4.34.8"
+	}
+}

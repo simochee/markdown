@@ -22,15 +22,15 @@
 	"author": "simochee <lollipop@simochee.net>",
 	"scripts": {
 		"build": "rollup -c",
-		"dev": "rollup -c -w"
+		"dev": "pnpm run build -w"
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@rollup/plugin-typescript": "^12.1.2",
+		"@internal/rollup-config": "workspace:^",
+		"@internal/tsconfigs": "workspace:^",
 		"@types/mdast": "^4.0.4",
 		"@types/node": "^22.13.5",
 		"rollup": "^4.34.8",
-		"@internal/tsconfigs": "workspace:^",
 		"unified": "^11.0.5"
 	},
 	"peerDependencies": {

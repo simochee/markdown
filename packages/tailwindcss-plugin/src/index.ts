@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export default plugin.withOptions(
+const myPlugin = plugin.withOptions(
 	() => {
 		return ({ addVariant, addComponents, theme, prefix }) => {
 			addComponents({
@@ -16,3 +16,5 @@ export default plugin.withOptions(
 		},
 	}),
 );
+
+export default myPlugin;

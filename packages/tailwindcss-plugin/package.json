@@ -22,13 +22,13 @@
 	"author": "simochee <lollipop@simochee.net>",
 	"scripts": {
 		"build": "rollup -c",
-		"dev": "rollup -c -w"
+		"dev": "pnpm run build -w"
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@rollup/plugin-typescript": "^12.1.2",
-		"@types/node": "^22.13.5",
+		"@internal/rollup-config": "workspace:^",
 		"@internal/tsconfigs": "workspace:^",
+		"@types/node": "^22.13.5",
 		"rollup": "^4.34.8"
 	},
 	"peerDependencies": {
