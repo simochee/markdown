@@ -1,16 +1,5 @@
 {
-	"compilerOptions": {
-		"target": "es2018",
-		"module": "esnext",
-		"lib": ["esnext"],
-		"moduleResolution": "bundler",
-		"esModuleInterop": true,
-		"strict": true,
-		"strictNullChecks": true,
-		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"skipDefaultLibCheck": true
-	},
+	"extends": "@internal/tsconfigs/rollup.json",
 	"include": ["src"],
 	"exclude": ["node_modules"]
 }

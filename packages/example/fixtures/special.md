@@ -2,13 +2,15 @@
 
 ## Gyazo
 
-@[gyazo](86fad17530bc40d05c15cab7c8fb61d5)
+https://gyazo.com/383b8394d63354706e0cc5113a13f897
 
-@[gyazo](https://gyazo.com/383b8394d63354706e0cc5113a13f897)
+https://i.gyazo.com/86fad17530bc40d05c15cab7c8fb61d5.jpg
 
-@[gyazo](7125c10d128ebeff8af473f082df7798){w=1600,h=1066}
+https://gyazo.com/7125c10d128ebeff8af473f082df7798
+{w=1600,h=1066}
 
-@[gyazo](7914d9f02d5ff152b1eba84423315765){w=1600,h=893,alt=東京の夜景。ビルの間に青色にライトアップされた東京タワーが見える}
+https://gyazo.com/7914d9f02d5ff152b1eba84423315765
+{w=1600,h=893,alt=東京の夜景。ビルの間に青色にライトアップされた東京タワーが見える}
 
 ## YouTube
 
