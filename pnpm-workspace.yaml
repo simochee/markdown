@@ -1,6 +1,32 @@
 packages:
   - packages/*
 onlyBuiltDependencies:
-  - '@biomejs/biome'
+  - "@biomejs/biome"
   - esbuild
   - lefthook
+catalog:
+  "@biomejs/biome": ^1.9.4
+  "@rollup/plugin-typescript": ^12.1.2
+  "@storybook/addon-essentials": ^8.6.2
+  "@storybook/react": ^8.6.2
+  "@storybook/react-vite": ^8.6.2
+  "@tailwindcss/vite": ^4.0.9
+  "@tsconfig/vite-react": ^3.4.0
+  "@types/deepmerge": ^2.2.3
+  "@types/mdast": ^4.0.4
+  "@types/node": ^22.13.5
+  "@types/react": ^19.0.10
+  deepmerge: ^4.3.1
+  lefthook: ^1.11.2
+  react: ^19.0.0
+  remark: ^15.0.1
+  remark-html: ^16.0.1
+  rollup: ^4.34.8
+  sort-package-json: ^2.15.0
+  storybook: ^8.6.2
+  tailwindcss: ^4.0.9
+  turbo: ^2.4.4
+  unified: ^11.0.5
+  unist-util-visit: ^5.0.0
+  vite: ^6.2.0
+  vite-plugin-node-polyfills: ^0.23.0

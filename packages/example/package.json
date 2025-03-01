@@ -7,22 +7,22 @@
 		"build": "storybook build"
 	},
 	"devDependencies": {
-		"@storybook/addon-essentials": "^8.6.2",
-		"@storybook/react": "^8.6.2",
-		"@storybook/react-vite": "^8.6.2",
-		"@tailwindcss/vite": "^4.0.9",
-		"@tsconfig/vite-react": "^3.4.0",
-		"@types/react": "^19.0.10",
-		"storybook": "^8.6.2",
-		"tailwindcss": "^4.0.9",
-		"vite": "^6.2.0",
-		"vite-plugin-node-polyfills": "^0.23.0"
+		"@storybook/addon-essentials": "catalog:",
+		"@storybook/react": "catalog:",
+		"@storybook/react-vite": "catalog:",
+		"@tailwindcss/vite": "catalog:",
+		"@tsconfig/vite-react": "catalog:",
+		"@types/react": "catalog:",
+		"storybook": "catalog:",
+		"tailwindcss": "catalog:",
+		"vite": "catalog:",
+		"vite-plugin-node-polyfills": "catalog:"
 	},
 	"dependencies": {
 		"@simochee-markdown/remark-plugin": "workspace:^",
 		"@simochee-markdown/tailwindcss-plugin": "workspace:^",
-		"react": "^19.0.0",
-		"remark": "^15.0.1",
-		"remark-html": "^16.0.1"
+		"react": "catalog:",
+		"remark": "catalog:",
+		"remark-html": "catalog:"
 	}
 }

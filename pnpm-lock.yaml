@@ -4,21 +4,99 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@biomejs/biome':
+      specifier: ^1.9.4
+      version: 1.9.4
+    '@rollup/plugin-typescript':
+      specifier: ^12.1.2
+      version: 12.1.2
+    '@storybook/addon-essentials':
+      specifier: ^8.6.2
+      version: 8.6.2
+    '@storybook/react':
+      specifier: ^8.6.2
+      version: 8.6.2
+    '@storybook/react-vite':
+      specifier: ^8.6.2
+      version: 8.6.2
+    '@tailwindcss/vite':
+      specifier: ^4.0.9
+      version: 4.0.9
+    '@tsconfig/vite-react':
+      specifier: ^3.4.0
+      version: 3.4.0
+    '@types/deepmerge':
+      specifier: ^2.2.3
+      version: 2.2.3
+    '@types/mdast':
+      specifier: ^4.0.4
+      version: 4.0.4
+    '@types/node':
+      specifier: ^22.13.5
+      version: 22.13.5
+    '@types/react':
+      specifier: ^19.0.10
+      version: 19.0.10
+    deepmerge:
+      specifier: ^4.3.1
+      version: 4.3.1
+    lefthook:
+      specifier: ^1.11.2
+      version: 1.11.2
+    react:
+      specifier: ^19.0.0
+      version: 19.0.0
+    remark:
+      specifier: ^15.0.1
+      version: 15.0.1
+    remark-html:
+      specifier: ^16.0.1
+      version: 16.0.1
+    rollup:
+      specifier: ^4.34.8
+      version: 4.34.8
+    sort-package-json:
+      specifier: ^2.15.0
+      version: 2.15.0
+    storybook:
+      specifier: ^8.6.2
+      version: 8.6.2
+    tailwindcss:
+      specifier: ^4.0.9
+      version: 4.0.9
+    turbo:
+      specifier: ^2.4.4
+      version: 2.4.4
+    unified:
+      specifier: ^11.0.5
+      version: 11.0.5
+    unist-util-visit:
+      specifier: ^5.0.0
+      version: 5.0.0
+    vite:
+      specifier: ^6.2.0
+      version: 6.2.0
+    vite-plugin-node-polyfills:
+      specifier: ^0.23.0
+      version: 0.23.0
+
 importers:
 
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^1.9.4
+        specifier: 'catalog:'
         version: 1.9.4
       lefthook:
-        specifier: ^1.11.2
+        specifier: 'catalog:'
         version: 1.11.2
       sort-package-json:
-        specifier: ^2.15.0
+        specifier: 'catalog:'
         version: 2.15.0
       turbo:
-        specifier: ^2.4.4
+        specifier: 'catalog:'
         version: 2.4.4
 
   packages/example:
@@ -30,50 +108,50 @@ importers:
         specifier: workspace:^
         version: link:../tailwindcss-plugin
       react:
-        specifier: ^19.0.0
+        specifier: 'catalog:'
         version: 19.0.0
       remark:
-        specifier: ^15.0.1
+        specifier: 'catalog:'
         version: 15.0.1
       remark-html:
-        specifier: ^16.0.1
+        specifier: 'catalog:'
         version: 16.0.1
     devDependencies:
       '@storybook/addon-essentials':
-        specifier: ^8.6.2
+        specifier: 'catalog:'
         version: 8.6.2(@types/react@19.0.10)(storybook@8.6.2)
       '@storybook/react':
-        specifier: ^8.6.2
+        specifier: 'catalog:'
         version: 8.6.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(storybook@8.6.2)(typescript@5.7.3)
       '@storybook/react-vite':
-        specifier: ^8.6.2
+        specifier: 'catalog:'
         version: 8.6.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@4.34.8)(storybook@8.6.2)(typescript@5.7.3)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1))
       '@tailwindcss/vite':
-        specifier: ^4.0.9
+        specifier: 'catalog:'
         version: 4.0.9(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1))
       '@tsconfig/vite-react':
-        specifier: ^3.4.0
+        specifier: 'catalog:'
         version: 3.4.0
       '@types/react':
-        specifier: ^19.0.10
+        specifier: 'catalog:'
         version: 19.0.10
       storybook:
-        specifier: ^8.6.2
+        specifier: 'catalog:'
         version: 8.6.2
       tailwindcss:
-        specifier: ^4.0.9
+        specifier: 'catalog:'
         version: 4.0.9
       vite:
-        specifier: ^6.2.0
+        specifier: 'catalog:'
         version: 6.2.0(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)
       vite-plugin-node-polyfills:
-        specifier: ^0.23.0
+        specifier: 'catalog:'
         version: 0.23.0(rollup@4.34.8)(vite@6.2.0(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1))
 
   packages/remark-plugin:
     dependencies:
       unist-util-visit:
-        specifier: ^5.0.0
+        specifier: 'catalog:'
         version: 5.0.0
     devDependencies:
       '@internal/rollup-config':
@@ -83,31 +161,31 @@ importers:
         specifier: workspace:^
         version: link:../tsconfigs
       '@types/mdast':
-        specifier: ^4.0.4
+        specifier: 'catalog:'
         version: 4.0.4
       '@types/node':
-        specifier: ^22.13.5
+        specifier: 'catalog:'
         version: 22.13.5
       rollup:
-        specifier: ^4.34.8
+        specifier: 'catalog:'
         version: 4.34.8
       unified:
-        specifier: ^11.0.5
+        specifier: 'catalog:'
         version: 11.0.5
 
   packages/rollup-config:
     devDependencies:
       '@rollup/plugin-typescript':
-        specifier: ^12.1.2
+        specifier: 'catalog:'
         version: 12.1.2(rollup@4.34.8)(tslib@2.8.1)(typescript@5.7.3)
       '@types/deepmerge':
-        specifier: ^2.2.3
+        specifier: 'catalog:'
         version: 2.2.3
       deepmerge:
-        specifier: ^4.3.1
+        specifier: 'catalog:'
         version: 4.3.1
       rollup:
-        specifier: ^4.34.8
+        specifier: 'catalog:'
         version: 4.34.8
 
   packages/tailwindcss-plugin:
@@ -123,10 +201,10 @@ importers:
         specifier: workspace:^
         version: link:../tsconfigs
       '@types/node':
-        specifier: ^22.13.5
+        specifier: 'catalog:'
         version: 22.13.5
       rollup:
-        specifier: ^4.34.8
+        specifier: 'catalog:'
         version: 4.34.8
 
   packages/tsconfigs: {}

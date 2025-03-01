@@ -28,16 +28,16 @@
 	"devDependencies": {
 		"@internal/rollup-config": "workspace:^",
 		"@internal/tsconfigs": "workspace:^",
-		"@types/mdast": "^4.0.4",
-		"@types/node": "^22.13.5",
-		"rollup": "^4.34.8",
-		"unified": "^11.0.5"
+		"@types/mdast": "catalog:",
+		"@types/node": "catalog:",
+		"rollup": "catalog:",
+		"unified": "catalog:"
 	},
 	"peerDependencies": {
 		"@types/mdast": "^4.0.4",
 		"unified": "^11.0.5"
 	},
 	"dependencies": {
-		"unist-util-visit": "^5.0.0"
+		"unist-util-visit": "catalog:"
 	}
 }
