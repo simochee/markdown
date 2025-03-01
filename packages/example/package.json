@@ -20,6 +20,7 @@
 	},
 	"dependencies": {
 		"@simochee-markdown/remark-plugin": "workspace:^",
+		"@simochee-markdown/tailwindcss-plugin": "workspace:^",
 		"react": "^19.0.0",
 		"remark": "^15.0.1",
 		"remark-html": "^16.0.1"

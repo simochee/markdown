@@ -1,9 +1,36 @@
 {
 	"name": "@simochee-markdown/tailwindcss-plugin",
 	"version": "0.0.0",
-	"scripts": {
-		"build": "echo 'not implemented'",
-		"dev": "echo 'not implemented'"
+	"repository": {
+		"directory": "packages/tailwindcss-plugin",
+		"type": "git",
+		"url": "https://github.com/simochee/simochee-markdown.git"
 	},
-	"license": "MIT"
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": ["dist"],
+	"homepage": "https://github.com/simochee/simochee-markdown/tree/main/packages/tailwindcss-plugin#readme",
+	"author": "simochee <lollipop@simochee.net>",
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^12.1.2",
+		"@types/node": "^22.13.5",
+		"rollup": "^4.34.8"
+	},
+	"peerDependencies": {
+		"tailwindcss": "^4.0.9"
+	}
 }

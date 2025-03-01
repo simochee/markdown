@@ -26,6 +26,9 @@ importers:
       '@simochee-markdown/remark-plugin':
         specifier: workspace:^
         version: link:../remark-plugin
+      '@simochee-markdown/tailwindcss-plugin':
+        specifier: workspace:^
+        version: link:../tailwindcss-plugin
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -89,7 +92,21 @@ importers:
         specifier: ^11.0.5
         version: 11.0.5
 
-  packages/tailwindcss-plugin: {}
+  packages/tailwindcss-plugin:
+    dependencies:
+      tailwindcss:
+        specifier: ^4.0.9
+        version: 4.0.9
+    devDependencies:
+      '@rollup/plugin-typescript':
+        specifier: ^12.1.2
+        version: 12.1.2(rollup@4.34.8)(tslib@2.8.1)(typescript@5.7.3)
+      '@types/node':
+        specifier: ^22.13.5
+        version: 22.13.5
+      rollup:
+        specifier: ^4.34.8
+        version: 4.34.8
 
 packages:
 
